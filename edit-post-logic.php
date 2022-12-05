@@ -9,7 +9,6 @@
         $is_featured = filter_var($_POST['is_featured'], FILTER_SANITIZE_NUMBER_INT);
         $previous_thumbnail_name =  filter_var($_POST['previous_thumbnail'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
         $thumbnail = $_FILES['thumbnail'];
-        var_dump($thumbnail);
         $is_featured= $is_featured == 1 ?: 0;
         //validate form data
         if(!$title){
